@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Movies List</h2>
+            <ul>
+                {{#each movies}}
+                    <li>
+                        <a href="/movies/{{id}}">{{title}}</a>
+                    </li>
+                {{/each}}
+            </ul>            
+        </div>
+    </div>
+</div>
+

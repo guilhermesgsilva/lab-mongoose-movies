@@ -1,16 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>{{title}}</title>
-  <link rel="stylesheet" href="/stylesheets/style.css" />
-</head>
-<body>
 
-  {{{body}}}
+   <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>{{title}}</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="/stylesheets/style.css" />
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+   </head>
 
-  <script src="/javascripts/script.js"></script>
-</body>
+   <body>
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Celebrities</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/celebrities">List</a></li>
+                            <li><a class="dropdown-item" href="/create-celebrity">Create</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Movies</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/movies">List</a></li>
+                            <li><a class="dropdown-item" href="/create-movie">Create</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </div>
+      <main>
+         {{{body}}}  
+      </main>
+      <script src="/js/script.js"></script>
+   </body>
+
 </html>
+

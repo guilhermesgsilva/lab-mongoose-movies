@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>{{name}}</h2>
+            <h3>{{occupation}}</h3>
+            <p>"{{catchPhrase}}"</p>
+            <form action="/celebrities/{{id}}/edit" method="GET">
+                <button type="submit">Edit</button>
+            </form>
+            <form action="/celebrities/{{id}}/delete" method="POST">
+                <button type="submit">Delete</button>
+            </form>    
+        </div>
+    </div>
+</div>
